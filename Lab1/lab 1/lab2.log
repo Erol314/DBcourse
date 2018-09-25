@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.18)  18 SEP 2018 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.18)  25 SEP 2018 09:12
 entering extended mode
-**"g:/Anul_3/Semestru 1/BD/Lab1/lab 1/lab1.tex"
-("g:/Anul_3/Semestru 1/BD/Lab1/lab 1/lab1.tex"
+**"g:/Anul_3/Semestru 1/BD/Lab1/lab 1/lab2.tex"
+("g:/Anul_3/Semestru 1/BD/Lab1/lab 1/lab2.tex"
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Users\Rubikon\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
@@ -552,8 +552,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip52
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 43.
- (lab1.aux)
-\openout1 = `lab1.aux'.
+ (lab2.aux)
+\openout1 = `lab2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
@@ -631,9 +631,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 69.
 LaTeX Info: Redefining \pageref on input line 69.
 LaTeX Info: Redefining \nameref on input line 69.
- (lab1.out) (lab1.out)
+ (lab2.out) (lab2.out)
 \@outlinefile=\write3
-\openout3 = `lab1.out'.
+\openout3 = `lab2.out'.
 
 <images/LOGO_UTM.jpg, id=3, 1204.5pt x 632.3625pt>
 File: images/LOGO_UTM.jpg Graphic file (type jpg)
@@ -730,10 +730,10 @@ Package pdftex.def Info: images/img12.png  used on input line 232.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
  [12]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
- (lab1.aux)
+ (lab2.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
-Package rerunfilecheck Info: File `lab1.out' has not changed.
+Package rerunfilecheck Info: File `lab2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
  ) 
@@ -751,7 +751,7 @@ ts/cm/cmbx12.pfb><C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rubikon/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Rubikon
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on lab1.pdf (13 pages, 369553 bytes).
+Output written on lab2.pdf (13 pages, 369602 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  30 named destinations out of 1000 (max. 500000)

@@ -1,7 +1,7 @@
 PWD g:/Anul_3/Semestru 1/BD/Lab1/lab 1
 INPUT C:/Users/Rubikon/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
-INPUT g:/Anul_3/Semestru 1/BD/Lab1/lab 1/lab1.tex
-OUTPUT lab1.log
+INPUT g:/Anul_3/Semestru 1/BD/Lab1/lab 1/lab2.tex
+OUTPUT lab2.log
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/size12.clo
@@ -66,9 +66,9 @@ INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hpdf
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
-INPUT lab1.aux
-INPUT lab1.aux
-OUTPUT lab1.aux
+INPUT lab2.aux
+INPUT lab2.aux
+OUTPUT lab2.aux
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
@@ -83,14 +83,14 @@ INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/name
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
-INPUT lab1.out
-INPUT lab1.out
-INPUT lab1.out
-INPUT lab1.out
-INPUT ./lab1.out
-INPUT ./lab1.out
-OUTPUT lab1.out
-OUTPUT lab1.pdf
+INPUT lab2.out
+INPUT lab2.out
+INPUT lab2.out
+INPUT lab2.out
+INPUT ./lab2.out
+INPUT ./lab2.out
+OUTPUT lab2.out
+OUTPUT lab2.pdf
 INPUT images/LOGO_UTM.jpg
 INPUT ./images/LOGO_UTM.jpg
 INPUT ./images/LOGO_UTM.jpg
@@ -168,9 +168,9 @@ INPUT ./images/img12.png
 INPUT ./images/img12.png
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
-INPUT lab1.aux
-INPUT ./lab1.out
-INPUT ./lab1.out
+INPUT lab2.aux
+INPUT ./lab2.out
+INPUT ./lab2.out
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb

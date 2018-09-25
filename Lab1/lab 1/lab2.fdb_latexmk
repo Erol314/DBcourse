@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1537263670 "g:/Anul_3/Semestru 1/BD/Lab1/lab 1/lab1.tex" "lab1.pdf" "lab1" 1537263673
+["pdflatex"] 1537855928 "g:/Anul_3/Semestru 1/BD/Lab1/lab 1/lab2.tex" "lab2.pdf" "lab2" 1537855931
   "C:/Users/Rubikon/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1524063460 4081025 3cf6cada650789f29d2eeb45ad96f5ee ""
   "C:/Users/Rubikon/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1537230333 83721 56dfc66f96b4bc7777806d83f0266370 ""
   "C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -59,7 +59,7 @@
   "C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/enumerate.sty" 1492423194 3555 d39e40f25d5fd2b3b49a58d155063dd6 ""
   "C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Rubikon/AppData/Local/Programs/MiKTeX 2.9/tex/latex/vmargin/vmargin.sty" 1090519524 7055 5eae49c3f07fead60d92def0a4f5c30f ""
-  "g:/Anul_3/Semestru 1/BD/Lab1/lab 1/lab1.tex" 1537263669 12992 9d2a961cca996ff3d513524f7780f390 ""
+  "g:/Anul_3/Semestru 1/BD/Lab1/lab 1/lab2.tex" 1537855923 12992 6ef5aa30971a1c9808ddb652a1fcb240 ""
   "images/LOGO_UTM.jpg" 1520167040 67875 a62be7fee8bcf3cbc272a389a11639c2 ""
   "images/img1.png" 1537232621 34991 72c1cc4e54a26098751f054a9e87f9c2 ""
   "images/img10.png" 1537256907 27385 2660cb3bcc5ab9c708c1f66c31777db0 ""
@@ -71,11 +71,11 @@
   "images/img5.png" 1537255451 25830 40916abce7f08efe54b5258e4ba17f82 ""
   "images/img8.png" 1537255762 18084 0bc1af1e461515b3c456311f30eb7462 ""
   "images/img9.png" 1537256651 27727 dccc9de5071650ed593c447b3a5828ea ""
-  "lab1.aux" 1537263672 2035 4120f06c21d9d2d1e346768f30a98328 ""
-  "lab1.out" 1537263671 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "lab1.tex" 1537263669 12992 9d2a961cca996ff3d513524f7780f390 ""
+  "lab2.aux" 1537855931 2035 4120f06c21d9d2d1e346768f30a98328 ""
+  "lab2.out" 1537855930 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "lab2.tex" 1537855923 12992 6ef5aa30971a1c9808ddb652a1fcb240 ""
   (generated)
-  "lab1.out"
-  "lab1.aux"
-  "lab1.pdf"
-  "lab1.log"
+  "lab2.pdf"
+  "lab2.aux"
+  "lab2.out"
+  "lab2.log"
