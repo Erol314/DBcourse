@@ -122,18 +122,14 @@
         \pagebreak
         %\tableofcontents
         \subsection*{ General purpose:}
-        \subsubsection*{ Learn about Creating Table of DataBase}
+        \subsubsection*{ Learn about SQL Query Language}
         
         \subsection*{Tasks:}
         \begin{itemize}
                 \item Answer Questions at the end of Chapter 4;
-                \item Solve ex. 1, 2 at the end of Chapter 4;
-                \item Create a database which name is "Universitate";
-                \begin{itemize}
-                        \item Grupe;
-                        \item Discipline;
-                \end{itemize}
-                \item Create the following tables on your database;
+                \item Solve ex. 1 at the end of Chapter 4;
+                \item Create SQL Queries onto database which name is "universitatea" to solve tasks according to the variant  ;
+                
         \end{itemize}
         \subsection*{Answers to Questions:}
         \begin{enumerate}
@@ -145,10 +141,13 @@
                         \item Built in Debugging system.
 
                 \end{itemize}
+                
                 \item What do DDL, DML, DCL and TCL mean?
                 \begin{itemize}
-                \item  Data Definition Language consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in database.
-                \end{itemize}
+                        \item  Data Definition Language consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in database.
+                
+                
+                
                 \item  DDL commands:
                 \begin{itemize}                 
                         \item COMMENT 
@@ -175,43 +174,39 @@
                         \item ROLLBACK   
                         \item COMMIT    
                 \end{itemize}
-                \item Integrity constraints are used to ensure accuracy and consistency of data in a relational database. SQL Server uses following constraints
-                \begin{itemize}                       
-                        \item Not NULL - disallows the entrance of NULL values into a column
-                        \item Unique - value in that column for every row of data in the table must have a unique value.
-                        \item Primary Key - identifies one or more columns in a table that make a row of data unique.
-                        Foreign Key - references a primary key in the parent table.
-                        \item Check - Check (CHK) constraints can be utilized to check the validity of data entered into particular table columns.
                 \end{itemize}
-                \item You cannot delete a column that has a CHECK constraint without deleting the constraint first. Also, it is not possible to delete a column that has PRIMARY KEY or FOREIGN KEY constraints or other dependencies except when using the Table Designer. When using Object Explorer or Transact-SQL, you must first remove all dependencies on the column.
-                \item Modifying the data type of a column that already contains data can result in the permanent loss of data when the existing data is converted to the new type. In addition, code and applications that depend on the modified column may fail. These include queries, views, stored procedures, user-defined functions, and client applications. Note that these failures will cascade. For example, a stored procedure that calls a user-defined function that depends on the modified column may fail.
+                \item Select instruction syntax:\cite{MSSQL_}
+                \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=.95\textwidth]{img.png}
+                        \caption{Full Select instruction syntax for MSSQL}
+                \end{figure}
+                \vspace{0.5 cm}
+                \item JOIN in MSSQL
+                \begin{itemize}                 
+                        \item A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+                        Here are the different types of the JOINs in SQL:
+                        \begin{itemize} 
+                                \item (INNER) JOIN: Returns records that have matching values in both tables
+                                \item LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
+                                \item RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
+                                \item FULL (OUTER) JOIN: Return all records when there is a match in either left or right table
+                        \end{itemize}
+                \end{itemize}
+                \item How to limit results from SQL queries:
+                \begin{itemize}                 
+                        \item The SELECT TOP clause is used to specify the number of records to return.   
+                \end{itemize}
+                
         \end{enumerate}
 
 
         \subsection*{Task Realization:}
-        \begin{enumerate}
-                \item  Which number can be put in a column with type DECIMAL(4, 1)?
-                \begin{itemize}
-                        \item 116,2 is answer because it exactly 4 digits with 1 digits after comma.
-        
-                \end{itemize}
-                \item Consider Col1 is INT and Col2 is DECIMAL(2, 1). What type Col3 should be to contain the result of Col1 * Col2?
-                \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=.35\textwidth]{img9.png}
-                        \caption{Creating The table "Grupe"}
-                \end{figure}
-                \vspace{0.5 cm}
 
-                In order to save the result of multiplication Col3 must have DECIMAL(2, 1) as type, since DECIMAL has higher precedence than INT
-        \end{enumerate}
-       
-
-        
-        
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img1.png}
+                \includegraphics[width=.75\textwidth]{img1.png}
                 \caption{Aflafi toate datele despre grupele de studii de la facultate}
         \end{figure}
         \vspace{0.5 cm}
@@ -219,14 +214,14 @@
         \begin{figure}[H]
                 \centering
                 \includegraphics[width=.95\textwidth]{img2.png}
-                \caption{Sa se obtina lista disciplinelor in ordine descrescatoare a numarului de ore.  }
+                \caption{Sa se obtina lista disciplinelor in ordine descrescatoare a numarului de ore.}
         \end{figure}
         \vspace{0.5 cm}
 
         
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img3.png}
+                \includegraphics[width=1\textwidth]{img3.png}
                 \caption{Aflati cursurile (Disciplina) predate de fiecare profesor (NumeProfesor, PrenumeProfesor) sortate descrescator dupa nume apoi prenume.}
         \end{figure}
         \vspace{0.5 cm}
@@ -234,99 +229,99 @@
         
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img4.png}
+                \includegraphics[width=.75\textwidth]{img4.png}
                 \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img5.png}
-                \caption{Sa se afi~eze lista studentilor al caror nume se termina in ,,u" }
+                \includegraphics[width=1\textwidth]{img5.png}
+                \caption{Sa se afiseze lista studentilor al caror nume se termina in ,,u" }
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img6.png}
+                \includegraphics[width=.5\textwidth]{img6.png}
                 \caption{Afi~ati numele ~i prenumele primilor 5 studenti, care au obtinut note in ordine descrescatoare la al doilea test de la disciplina Baze de date. Sa se foloseasca optiunea TOP ... WITH TIES.}
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img7.png}
+                \includegraphics[width=.25\textwidth]{img7.png}
                 \caption{in ce grupa (CodGrupa) invata studentii care locuiesc pe strada 31 August?  }
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img9.png}
-                \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
+                \includegraphics[width=.9\textwidth]{img9.png}
+                \caption{Gasiti numele, adresa studentilor si codul disciplinei la care studentii au avut eel putin o nota mai mare decat 8 in 2018.}
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img10.png}
-                \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
+                \includegraphics[width=.55\textwidth]{img10.png}
+                \caption{Gasiti studentii (numele, prenumele), care au obtinut la disciplina Baze de date (examen), in anul 2018, vreo nota mai mica de 8 si mai mare ca 4.}
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img11.png}
-                \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
+                \includegraphics[width=.65\textwidth]{img11.png}
+                \caption{Furnizati numele si prenumele profesorilor, care au predat disciplina Baze de date, in 2018, ~i au evaluat vreun student cu nota nesatisracatoare la reu~ita curenta.  }
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
                 \includegraphics[width=.95\textwidth]{img12.png}
-                \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
+                \caption{Furnizati, in evidenta academica (reusita) a studentilor cu prenumele Alex, urmatoarele date: numele, prenumele, denumirea disciplinei, notele (inclusiv la probele intermediare) si anul la care au sustinut. }
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img13.png}
-                \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
+                \includegraphics[width=.85\textwidth]{img13.png}
+                \caption{Aflati cursurile urmate de catre studentul Florea loan.}
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img14.png}
-                \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
+                \includegraphics[width=.85\textwidth]{img14.png}
+                \caption{Aflati numele si prenumele studentilor, precum ~i cursurile promovate cu note mai mari de 8 la examen.}
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img24.png}
-                \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
+                \includegraphics[width=.37\textwidth]{img24.png}
+                \caption{Sa se afi~ase lista disciplinelor (Disciplina) predate de eel putin doi profesori }
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img25.png}
-                \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
+                \includegraphics[width=.38\textwidth]{img25.png}
+                \caption{in ce grupe de studii (CodGrupa) figureaza mai mult de 24 de studenti?  }
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img26.png}
-                \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
+                \includegraphics[width=.32\textwidth]{img26.png}
+                \caption{Gasiti numele, prenumele ~i adresele studentilor si ale profesorilor care locuiesc pe strada 31 August.  }
         \end{figure}
         \vspace{0.5 cm}
 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=.95\textwidth]{img37.png}
-                \caption{Afi~ati care dintre discipline au denumirea formata din mai mult de 20 de caractere? }
+                \includegraphics[width=.3\textwidth]{img37.png}
+                \caption{Gasiti disciplina sustinuta de studenti cu nota medie (la examen) cea mai inalta.}
         \end{figure}
         \vspace{0.5 cm}
 
@@ -341,8 +336,11 @@
  
 \begin{thebibliography}{9}
 \bibitem{SQLServerManagementStudio} 
-SQL Server Management Studio 2017, Tutorials for Lab 3
+SQL Server Management Studio 2017, Tutorials for Lab 4
 
+\bibitem{MSSQL_} 
+MSSQL Official Documentation
+\url{https://docs.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-2017}
 \end{thebibliography}
                 
 \end{document}
