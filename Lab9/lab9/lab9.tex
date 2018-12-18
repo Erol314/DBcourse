@@ -45,7 +45,7 @@
 \renewcommand{\theenumii}{\arabic{enumii}}
 \setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
 %%\setmarginsrb{hleftmargini}{htopmargini}{hrightmargini}{hbottommargini}% {hheadheighti}{hheadsepi}{hfootheighti}{hfootskipi
-\title{DB Laboratory 7}								
+\title{DB Laboratory 9}								
 \author{Sezgin E}							
 \makeatletter
 %%The \makeatletter command temporarily defines »@« as a normal character to enable changes to internal LaTeX macros outside packages (STY) or classes (CLS).
@@ -126,59 +126,35 @@
         
         \subsection*{Tasks:}
         \begin{itemize}
-                \item Answer Questions at the end of Chapter 7;
-                \item Solve ex. 1 - 8 at the end of Chapter 7.
+                \item Answer Questions at the end of Chapter 9;
+                \item Solve ex. 1 - 8 at the end of Chapter 9.
 
                 
         \end{itemize}
         \subsection*{Task Realization:}
-        In Figure 1 we can see the diagram of Universitatea Database as  with four initial tables.
+        In Figure 1 we can see the two stored Procedures. Basically they do the same as queries from Lab4 but now they are stored in memory and can be accessed any time  
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=\textwidth]{img1.png}
-                \caption{Finding group leaders and teachers counting most pairs}
+                \includegraphics[width=\textwidth]{img1b.png}
+                \caption{Ex1 Lab9}
         \end{figure}
         \vspace{0.5 cm}
-        
-       In figure 2 I added new constrain between grupe table and profesori according to sef grupa. Also added constrain between gruppe and profesori.
+        In figure 2 we can observe Stored procedure which doesn't have parameters but possess one output value, the total number of student  who didnt pass any exam.
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=\textwidth]{img2.png}
-                \caption{additional constrains for grupe table}
-        \end{figure}
-        \vspace{0.5 cm}
-
-        In figure 3 i traced the constraints between the table grupe and other tables. According to Lab 6  Ex3. Also i want to mention that for ex 5 i have the same image.
-        \begin{figure}[H]
-                \centering
-                \includegraphics[width = \textwidth]{img3.png}
-                \caption{Constraints for orarul table}
+                \includegraphics[width=0.8\textwidth]{img2.png}
+                \caption{Ex2 Lab9}
         \end{figure}
         \vspace{0.5 cm}
 
-        In figure 4 and 5 i created two secondar keys for orarul table. (Zi,Ora, IdGrupa, IdProfesor) and (Zi, Ora , IdGrupa, IdDisciplina) 
-        \begin{figure}[H]
-                \centering
-                \includegraphics[width=\textwidth]{img4a.png}
-                \caption{First PK}
-        \end{figure}
-        \vspace{0.5 cm}
-
-        \begin{figure}[H]
-                \centering
-                \includegraphics[width=\textwidth]{img4b.png}
-                \caption{second PK}
-        \end{figure}
-        \vspace{0.5 cm}
-
-        In figure 6 i created three schemas and transferred tables from dbo scheme in there. 
+        In figure 3 i created 2 functions which return same result as queries from Lab4.
         \begin{figure}[H]
                 \centering
                 \includegraphics[width=\textwidth]{img6.png}
                 \caption{Query ex 6}
         \end{figure}
         \vspace{0.5 cm}
-        In figure 7 we can observe three queries from Lab 4. in previous number i created three schemas with all tables. So here i just wrote the schema name then dot table name
+        In figure 4 we can observe user function which calculates student's age.
         \begin{figure}[H]
                 \centering
                 \includegraphics[width=\textwidth]{img7.png}
@@ -186,17 +162,25 @@
         \end{figure}
         \vspace{0.5 cm}
 
-        In figure 8 we can see the same three Queries asin previous exercise. The main difference is that i created Synonyms for schemas and used them instead of long names used before. 
+        In figure 5 we can observe user function which takes as imput parameters first and last name of certain student and show his performance in study. 
         \begin{figure}[H]
                 \centering
                 \includegraphics[width=\textwidth]{img8.png}
                 \caption{Query ex 8}
         \end{figure}
         \vspace{0.5 cm}
+
+        In figure 6 we can observe user function which takes as imput parameters the from and shows the best student or the worst one from this group.
+        \begin{figure}[H]
+                \centering
+                \includegraphics[width=\textwidth]{img9.png}
+                \caption{Query ex 9}
+        \end{figure}
+        \vspace{0.5 cm}
    
         \newpage 
         \subsection*{Conclusion}
-        During This lab work i find out how to Make synonyms and use them. I learned what is an diagram and how to do it step by step and edit in case of needing. Also i find out how to make schemas, and why do we need schemas in our databases, they are container like objects. 
+        During This lab work i find out how to Make stored procedures and functions. this is extremely important in real life programming because it makes programmer not to lose his time and write similar queries a lot of times.
         \cite{SQLServerManagementStudio}
         
 
@@ -205,7 +189,7 @@
  
 \begin{thebibliography}{9}
 \bibitem{SQLServerManagementStudio} 
-SQL Server Management Studio 2017, Tutorials for Lab 7
+SQL Server Management Studio 2017, Tutorials for Lab 9
 
 \bibitem{MSSQL_} 
 MSSQL Official Documentation

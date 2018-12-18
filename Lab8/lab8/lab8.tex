@@ -45,7 +45,7 @@
 \renewcommand{\theenumii}{\arabic{enumii}}
 \setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
 %%\setmarginsrb{hleftmargini}{htopmargini}{hrightmargini}{hbottommargini}% {hheadheighti}{hheadsepi}{hfootheighti}{hfootskipi
-\title{DB Laboratory 7}								
+\title{DB Laboratory 8}								
 \author{Sezgin E}							
 \makeatletter
 %%The \makeatletter command temporarily defines »@« as a normal character to enable changes to internal LaTeX macros outside packages (STY) or classes (CLS).
@@ -126,77 +126,64 @@
         
         \subsection*{Tasks:}
         \begin{itemize}
-                \item Answer Questions at the end of Chapter 7;
-                \item Solve ex. 1 - 8 at the end of Chapter 7.
+                \item Answer Questions at the end of Chapter 8;
+                \item Solve ex. 1 - 8 at the end of Chapter 8.
 
                 
         \end{itemize}
         \subsection*{Task Realization:}
-        In Figure 1 we can see the diagram of Universitatea Database as  with four initial tables.
+        In Figure 1 we can see the result of old Querry from Lab 4 but now i inserted the result in a view.
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=\textwidth]{img1.png}
-                \caption{Finding group leaders and teachers counting most pairs}
+                \includegraphics[width=\textwidth]{img1a.png}
+                \caption{Querry Ex1a}
         \end{figure}
         \vspace{0.5 cm}
         
-       In figure 2 I added new constrain between grupe table and profesori according to sef grupa. Also added constrain between gruppe and profesori.
+        In Figure 1 we can see the result of another old Querry from Lab 4  inserted  in a view. Now it is created not with script.
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=\textwidth]{img2.png}
-                \caption{additional constrains for grupe table}
+                \includegraphics[width=\textwidth]{img1b.png}
+                \caption{Querry Ex1}
         \end{figure}
         \vspace{0.5 cm}
 
-        In figure 3 i traced the constraints between the table grupe and other tables. According to Lab 6  Ex3. Also i want to mention that for ex 5 i have the same image.
+        In figure 3 I tried to modify a view but i gained an error because i used SCHEMABINDING and WITH CHECK OPTION. So it blocks any changes in initial tables.
         \begin{figure}[H]
                 \centering
-                \includegraphics[width = \textwidth]{img3.png}
-                \caption{Constraints for orarul table}
+                \includegraphics[width = 0.7 \textwidth]{img3_4.png}
+                \caption{Query ex 3 and 4}
         \end{figure}
         \vspace{0.5 cm}
 
-        In figure 4 and 5 i created two secondar keys for orarul table. (Zi,Ora, IdGrupa, IdProfesor) and (Zi, Ora , IdGrupa, IdDisciplina) 
+        In figure 4 and 5 i used old Querry from lab 4 and rewrote them In CTE form 
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=\textwidth]{img4a.png}
-                \caption{First PK}
+                \includegraphics[width=\textwidth]{img5a.png}
+                \caption{Query ex 5a}
         \end{figure}
         \vspace{0.5 cm}
 
+       
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=\textwidth]{img4b.png}
-                \caption{second PK}
+                \includegraphics[width=\textwidth]{img5b.png}
+                \caption{Query ex 5b}
         \end{figure}
         \vspace{0.5 cm}
-
-        In figure 6 i created three schemas and transferred tables from dbo scheme in there. 
+        In figure 6 we can observe recursive traversing of the ordered graph
         \begin{figure}[H]
                 \centering
-                \includegraphics[width=\textwidth]{img6.png}
+                \includegraphics[width=0.5\textwidth]{img6.png}
                 \caption{Query ex 6}
         \end{figure}
         \vspace{0.5 cm}
-        In figure 7 we can observe three queries from Lab 4. in previous number i created three schemas with all tables. So here i just wrote the schema name then dot table name
-        \begin{figure}[H]
-                \centering
-                \includegraphics[width=\textwidth]{img7.png}
-                \caption{Query ex 7}
-        \end{figure}
-        \vspace{0.5 cm}
 
-        In figure 8 we can see the same three Queries asin previous exercise. The main difference is that i created Synonyms for schemas and used them instead of long names used before. 
-        \begin{figure}[H]
-                \centering
-                \includegraphics[width=\textwidth]{img8.png}
-                \caption{Query ex 8}
-        \end{figure}
-        \vspace{0.5 cm}
+ 
    
         \newpage 
         \subsection*{Conclusion}
-        During This lab work i find out how to Make synonyms and use them. I learned what is an diagram and how to do it step by step and edit in case of needing. Also i find out how to make schemas, and why do we need schemas in our databases, they are container like objects. 
+        During This lab work i find out how to make views and why do i need them in real database.
         \cite{SQLServerManagementStudio}
         
 
@@ -205,7 +192,7 @@
  
 \begin{thebibliography}{9}
 \bibitem{SQLServerManagementStudio} 
-SQL Server Management Studio 2017, Tutorials for Lab 7
+SQL Server Management Studio 2017, Tutorials for Lab 8
 
 \bibitem{MSSQL_} 
 MSSQL Official Documentation
