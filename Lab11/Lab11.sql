@@ -1,78 +1,49 @@
-USE
- universitatea; 
+IF EXISTS (SELECT * FROM master.dbo.sysdevices WHERE name='device01')
+EXEC sp_dropdevice 'device01' , 'delfile'
 GO
---DROP TABLE IF EXISTS orarul_grupa;
---GO 
---CREATE SCHEMA schema_universitatea2 AUTHORIZATION dbo 
---GO 
---CREATE TABLE orarul_grupa(Id_Disciplina INT,
---						Cod_Grupa CHAR(6),
---						 Zi CHAR(2), 
---						 Ora TIME, 
---						 Auditoriu INT, 
---						 Bloc CHAR(1)) 
--- GRANT SELECT ON SCHEMA :: schema_universitatea2 TO Anna 
--- DENY  SELECT ON SCHEMA :: schema_universitatea2 TO Ion 
 
---ALTER TABLE grupe ADD UNIQUE (Sef_grupa) ;  
+exec sp_addumpdevice 'DISK', 'device01', 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\Backup\exercitiul1.bak'
+GO
 
---(6)
---Use universitatea
---Go
---CREATE SCHEMA cadre_didactice
---GO
---CREATE SCHEMA plan_studii
---GO
---CREATE SCHEMA studenti
---GO
---ALTER SCHEMA cadre_didactice TRANSFER [dbo].[profesori]
---GO
---ALTER SCHEMA plan_studii TRANSFER [dbo].[orarul]
---GO
---ALTER SCHEMA plan_studii TRANSFER [dbo].[discipline]
---GO
---ALTER SCHEMA studenti TRANSFER [dbo].[studenti]
---GO
---ALTER SCHEMA studenti TRANSFER [dbo].[studenti_reusita]
---GO
+Backup database University
+to device01 with format, Name = N'University-Full Database backup'
+GO
+--(2)
+IF EXISTS (SELECT * FROM master.dbo.sysdevices WHERE name='device02')
+EXEC sp_dropdevice 'device02' , 'delfile';
 
---(7)
-Select Id_Disciplina,Disciplina,Nr_ore_plan_disciplina from plan_studii.discipline
- ORDER BY  Nr_ore_plan_disciplina DESC; 
+EXEC sp_addumpdevice 'DISK', 'device02','C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\Backup\exercitiul2.bak'
+GO 
+BACKUP DATABASE University
+TO device02 WITH FORMAT,
+NAME = N'universitatea - Differential Database Backup'
+GO
+--(3)
+IF EXISTS (SELECT * FROM master.dbo.sysdevices WHERE name='backup_Log')
+EXEC sp_dropdevice 'backup_Log' , 'delfile';
 
-SELECT DISTINCT D.Id_Disciplina, D.Disciplina,  
-           P.Nume_Profesor, P.Prenume_Profesor
-	FROM plan_studii.discipline D 
-		JOIN studenti.studenti_reusita S_r ON D.Id_Disciplina = S_r.Id_Disciplina 
-        JOIN cadre_didactice.Profesori P ON P.Id_Profesor = S_r.Id_Profesor
-    ORDER BY
-		Nume_Profesor DESC, 
-		Prenume_Profesor DESC;
+GO
+EXEC sp_addumpdevice 'DISK', 'backup_Log', 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\Backup\exercitiul3.bak'
 
-
-SELECT Id_Disciplina,Disciplina FROM plan_studii.discipline 
-	WHERE LEN(Disciplina) > 20; 
-
---(8)
-CREATE SYNONYM Stdnt FOR [studenti].[studenti]
-CREATE SYNONYM Prof FOR [cadre_didactice].[profesori]
-CREATE SYNONYM Discipl FOR [plan_studii].[discipline]
-CREATE SYNONYM SReusita FOR [studenti].[studenti_reusita]
-
-Select Id_Disciplina,Disciplina,Nr_ore_plan_disciplina from Discipl
- ORDER BY  Nr_ore_plan_disciplina DESC; 
-
-SELECT DISTINCT D.Id_Disciplina, D.Disciplina,  
-           P.Nume_Profesor, P.Prenume_Profesor
-	FROM Discipl D 
-		JOIN SReusita S_r ON D.Id_Disciplina = S_r.Id_Disciplina 
-        JOIN Prof P ON P.Id_Profesor = S_r.Id_Profesor
-    ORDER BY
-		Nume_Profesor DESC, 
-		Prenume_Profesor DESC;
-
-
-SELECT Id_Disciplina,Disciplina FROM Discipl
-	WHERE LEN(Disciplina) > 20; 
-
-
+GO
+BACKUP LOG University TO backup_Log
+GO
+--(4)
+IF EXISTS (SELECT * FROM master.sys.databases WHERE name='universitatea_lab11')
+DROP DATABASE universitatea_lab11;
+GO
+Restore database universitatea_lab11
+from disk = 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\Backup\exercitiul1.bak'
+WITH MOVE 'University' TO 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\Backup\data.mdf',
+MOVE 'University_log' TO 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\Backup\log.ldf',
+NORECOVERY
+GO
+RESTORE LOG universitatea_lab11
+FROM DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\Backup\exercitiul3.bak'
+WITH NORECOVERY
+GO
+RESTORE DATABASE universitatea_lab11
+FROM DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\Backup\exercitiul2.bak'
+WITH 
+NORECOVERY
+GO

@@ -1,7 +1,7 @@
-PWD f:/Anul_3/Semestru 1/BD/Lab7/lab7
+PWD f:/Anul_3/Semestru 1/BD/Lab11/lab11
 INPUT C:/Users/sezgh/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
-INPUT f:/Anul_3/Semestru 1/BD/Lab7/lab7/lab6.tex
-OUTPUT lab6.log
+INPUT f:/Anul_3/Semestru 1/BD/Lab11/lab11/lab11.tex
+OUTPUT lab11.log
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/size12.clo
@@ -70,9 +70,9 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
-INPUT lab6.aux
-INPUT lab6.aux
-OUTPUT lab6.aux
+INPUT lab11.aux
+INPUT lab11.aux
+OUTPUT lab11.aux
 INPUT C:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
 INPUT C:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
@@ -87,14 +87,14 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
-INPUT lab6.out
-INPUT lab6.out
-INPUT lab6.out
-INPUT lab6.out
-INPUT ./lab6.out
-INPUT ./lab6.out
-OUTPUT lab6.out
-OUTPUT lab6.pdf
+INPUT lab11.out
+INPUT lab11.out
+INPUT lab11.out
+INPUT lab11.out
+INPUT ./lab11.out
+INPUT ./lab11.out
+OUTPUT lab11.out
+OUTPUT lab11.pdf
 INPUT images/LOGO_UTM.jpg
 INPUT ./images/LOGO_UTM.jpg
 INPUT ./images/LOGO_UTM.jpg
@@ -120,52 +120,32 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
-INPUT images/img1.png
-INPUT ./images/img1.png
-INPUT ./images/img1.png
-INPUT ./images/img1.png
-INPUT ./images/img1.png
-INPUT images/img2.png
-INPUT ./images/img2.png
-INPUT ./images/img2.png
-INPUT ./images/img2.png
-INPUT ./images/img2.png
+INPUT images/img4.png
+INPUT ./images/img4.png
+INPUT ./images/img4.png
+INPUT ./images/img4.png
+INPUT ./images/img4.png
 INPUT images/img3.png
 INPUT ./images/img3.png
 INPUT ./images/img3.png
 INPUT ./images/img3.png
 INPUT ./images/img3.png
-INPUT images/img4a.png
-INPUT ./images/img4a.png
-INPUT ./images/img4a.png
-INPUT ./images/img4a.png
-INPUT ./images/img4a.png
-INPUT images/img4b.png
-INPUT ./images/img4b.png
-INPUT ./images/img4b.png
-INPUT ./images/img4b.png
-INPUT ./images/img4b.png
-INPUT images/img6.png
-INPUT ./images/img6.png
-INPUT ./images/img6.png
-INPUT ./images/img6.png
-INPUT ./images/img6.png
-INPUT images/img7.png
-INPUT ./images/img7.png
-INPUT ./images/img7.png
-INPUT ./images/img7.png
-INPUT ./images/img7.png
-INPUT images/img8.png
-INPUT ./images/img8.png
-INPUT ./images/img8.png
-INPUT ./images/img8.png
-INPUT ./images/img8.png
+INPUT images/img2.png
+INPUT ./images/img2.png
+INPUT ./images/img2.png
+INPUT ./images/img2.png
+INPUT ./images/img2.png
+INPUT images/img1.png
+INPUT ./images/img1.png
+INPUT ./images/img1.png
+INPUT ./images/img1.png
+INPUT ./images/img1.png
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm
-INPUT lab6.aux
-INPUT ./lab6.out
-INPUT ./lab6.out
+INPUT lab11.aux
+INPUT ./lab11.out
+INPUT ./lab11.out
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
